@@ -1,0 +1,118 @@
+body {
+    background: #eee;
+    margin: 0;
+    padding: 0;
+}
+
+.wrapper {
+    background: #fff;
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.wrapper:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.service h2,
+.service p {
+    color: #999;
+    margin: 10px 0;
+    text-align: center;
+}
+
+.service {
+    float: left;
+    background: #eee;
+    width: 29.33%;
+    margin: 1%;
+    padding: 1%;
+    height: 140px;
+    position: relative;
+}
+
+.services::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.content {
+    margin-top: 100px;
+    padding: 10px;
+    background: #ccc;
+}
+
+.content p {
+    column-count: 3;
+    column-gap: 50px;
+    column-rule: 1px solid #fff;
+    text-align: justify;
+}
+
+section,
+aside {
+    float: left;
+    width: 46%;
+    background: #eee;
+    margin: 1%;
+    padding: 1%;
+}
+
+.columns:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.service:nth-child(1) {
+    top: 10px;
+}
+
+.service:nth-child(2) {
+    top: 20px;
+}
+
+.service:nth-child(3) {
+    top: 30px;
+}
+
+.banner {
+    max-height: 300px;
+    overflow: hidden;
+    margin: 1%;
+    position: relative;
+}
+
+.banner h2 {
+    position: absolute;
+    top: 30px;
+    left: 0;
+    margin: 0px;
+    width: 100%;
+    text-align: center;
+}
+
+nav {
+    background: #333;
+    /* padding: 5px; */
+    position: fixed;
+    top: 0px;
+    width: 100%;
+}
+
+nav li {
+    list-style-type: none;
+    margin: 0 10px;
+    color: white;
+    float: right;
+}
+
+nav ul:after {
+    content: "";
+    display: block;
+    clear: both;
+}

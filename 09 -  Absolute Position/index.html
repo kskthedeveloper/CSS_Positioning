@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body style="">
+    <div class="wrapper">
+        <!-- Banner -->
+        <div class="banner">
+            <img src="test.jpg" width="100%">
+            <h2>This is the Banner</h2>
+        </div>
+        <!-- PROBLEM:: There is no height for div.services -->
+        <div class="services">
+            <div class="service">
+                <h2>Service 1</h2>
+                <p>This is service 1</p>
+            </div>
+            <div class="service">
+                <h2 style="">Service 2</h2>
+                <p>This is service 2</p>
+            </div>
+            <div class="service">
+                <h2>Service 3</h2>
+                <p>This is service 3</p>
+            </div>
+        </div>
+        <!-- 
+            PROOF:: giving the background color to div.content
+            This will also take the services area
+            
+            WHY:: this is floating and not in a normal web flow
+
+            TODO:: to give a normal web flow
+            
+            SOLUTION - 1 :: "clear: both;"
+                But there is a flaw. Any margin or padding cannot be added as expect
+                This does not fully work.
+                
+            SOLUTION - 2 :: add empty div with "clear: both;"
+
+            SOULTION - 3 :: add after pseudo class with "clear: both;"
+        -->
+        <div class="content">
+            <h2>Content</h2>
+            <p>Deserunt est aute laboris mollit excepteur. Minim reprehenderit velit officia mollit et veniam ea. Dolore mollit eiusmod est fugiat labore. Officia deserunt nostrud esse reprehenderit eiusmod id ipsum dolor nulla nisi adipisicing. Magna eiusmod
+                consectetur est ea laboris sint adipisicing ipsum excepteur anim pariatur veniam ad dolore. Et nostrud qui qui aliqua ad culpa velit laborum incididunt voluptate. Pariatur esse exercitation laborum laboris ipsum pariatur reprehenderit
+                sunt voluptate sunt eiusmod magna irure.
+            </p>
+        </div>
+        <div class="columns">
+            <section>
+                <h2>This is Columns One</h2>
+                <p>
+                    In qui minim ea nostrud ut. Consequat ea ex cupidatat ut nulla irure tempor cupidatat anim amet Lorem quis tempor. Non minim fugiat deserunt pariatur minim nostrud minim proident. Deserunt veniam deserunt mollit excepteur nulla sit commodo laboris velit.
+                </p>
+                <p>
+                    Culpa duis elit proident veniam culpa in. Excepteur aliquip non amet duis incididunt elit aliqua amet occaecat quis. Qui magna nulla deserunt est enim adipisicing cupidatat irure aute sint. Aliquip irure amet tempor aliquip reprehenderit proident non
+                    ullamco deserunt officia nisi. Aliqua anim ad deserunt ullamco.
+                </p>
+            </section>
+            <aside>
+                <h2>This is Columns Two</h2>
+                <p>
+                    In qui minim ea nostrud ut. Consequat ea ex cupidatat ut nulla irure tempor cupidatat anim amet Lorem quis tempor. Non minim fugiat deserunt pariatur minim nostrud minim proident. Deserunt veniam deserunt mollit excepteur nulla sit commodo laboris velit.
+                </p>
+                <p>
+                    Culpa duis elit proident veniam culpa in. Excepteur aliquip non amet duis incididunt elit aliqua amet occaecat quis. Qui magna nulla deserunt est enim adipisicing cupidatat irure aute sint. Aliquip irure amet tempor aliquip reprehenderit proident non
+                    ullamco deserunt officia nisi. Aliqua anim ad deserunt ullamco.
+                </p>
+            </aside>
+        </div>
+    </div>
+</body>
+
+</html>

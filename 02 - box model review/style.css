@@ -1,0 +1,21 @@
+/* 
+    Change dispaly:block -> display:inline-block;
+*/
+
+p,
+a {
+    width: 20%;
+    padding: 30px;
+    margin: 20px;
+    border: 1px solid black;
+    display: block;
+}
+
+
+/* 
+    Test by commenting display block
+*/
+
+a {
+    display: block;
+}
